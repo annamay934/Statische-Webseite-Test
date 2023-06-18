@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kleiderspenden Test</title> 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <title>Kleiderspenden Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-  
-  <header>
-    <style type="text/css">
-      p { color: rgb(195, 0, 255); }
-      h1 { 
-      background-color: rgba(117, 0, 128, 0.247);
-      padding: 1em;
-      border: 5px solid black;
-      }
-      h1, h2 { color: rgba(247, 0, 255, 0.411); }
-      table { font-size: 200%; }
-    </style>
 
-    <nav>
-      <ul>
-        <li>
-          <form>
-            <input type="text" name="suche" placeholder="Suche">
-          </form>
-        </li>
-        <li><a
-href="https://www.instagram.com/Kleiderspenden">Instagram</a></li>
-        <li><a
-href="https://www.facebook.com/Kleiderspenden">Facebook</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
+<header>
 
-    <nav>
-      <ul>
-        <li><a href="home.html">Homepage</a></li>
-        <li><a href="services.html">Unsere Leistungen</a></li>
-        <li><a href="products.html">Unsere Produkte</a></li>
-        <li><a href="prices.html">Unsere Preise</a></li>
-        <li><a href="about.html">Über uns</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li>
+        <form>
+          <input type="text" name="suche" placeholder="Suche">
+        </form>
+      </li>
 
-    <body>
-      <section>
+      <li>
+        <a href="https://www.instagram.com/Kleiderspenden">Instagram</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/Kleiderspenden">Facebook</a>
+      </li>
+      <li>
+        <a href="contact.html">Kontakt</a>
+      </li>
+    </ul>
+  </nav>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Homepage</a></li>
+      <li><a href="services.html">Unsere Leistungen</a></li>
+      <li><a href="products.html">Unsere Produkte</a></li>
+      <li><a href="prices.html">Unsere Preise</a></li>
+      <li><a href="about.html">Über uns</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <section>
+      <li>
+        <img src="https://cdn.pixabay.com/photo/2015/06/20/18/24/dresses-816033_640.jpg" />
+      </li>
+
       <h1>Willkommen auf der Homepage von ihrer Kleiderspenden Annahme</h1>
       <p>
         Gerne unterstützen wir Sie dabei ihren Beitrag zum Klimawandel zu leisten.
-        <br> 
-        Sie können ihre Kleiderspenden hier online registrieren oder vor Ort abgeben. 
+        <br>
+        Sie können ihre Kleiderspenden hier online registrieren oder vor Ort abgeben.
       </p>
       <h2>Bitte machen Sie hier ihre Angaben:</h2>
-      </section>
-      
-      <form onsubmit="validateForm()">
-        <label>
-          <input type="checkbox" name="Abholung" onclick="toggleForm()" value="Abholung"> Abholung durch uns <br>
-        </label>
+    </section>
 
-        <div id="formContainer" style="display: none;">
+    <form onsubmit="validateForm()">
+      <label>
+        <input type="checkbox" name="Abholung" onclick="toggleForm()" value="Abholung"> Abholung durch uns <br>
+      </label>
+
+      <div id="formContainer" style="display: none;">
         <label for="name">Vorname:</label><br>
         <input type="text" Vorname="name" id="Vorname" required> <br>
 
@@ -70,77 +75,78 @@ href="https://www.facebook.com/Kleiderspenden">Facebook</a></li>
         <input type="text" Nachname="name" id="Nachname" required> <br>
 
         <label for="name">Straße mit Hausnummer:</label><br>
-        <input type="text" Straße mit Hausnummer="name" id="Straße mit Hausnummer" required placeholder="Mustermannstraße 3"> <br>
+        <input type="text" Straße mit Hausnummer="name" id="Straße mit Hausnummer" required
+          placeholder="Mustermannstraße 3"> <br>
 
         <label for="name">Postleitzahl:</label><br>
         <input type="text" Postleitzahl="name" id="Postleitzahl" required> <br>
 
         <label for="name">Wohnort:</label><br>
         <input type="text" Wohnort="name" id="Wohnort" required> <br><br>
-        </div>
-        
-        <script>
-          function toggleForm() {
-            var formContainer = document.getElementById("formContainer");
-            var openFormCheckbox = document.getElementsByName("Abholung")[0];
-        
-            if (openFormCheckbox.checked) {
-              formContainer.style.display = "block";
-            } else {
-              formContainer.style.display = "none";
-            }
-          }
-        </script>
-        
-        <label>
-          <input type="checkbox" name="AbgabevorOrt" onclick="toggleForm2()" value="AbgabevorOrt"> Abgabe vor Ort <br>
-        </label>
-
-        <div id="formContainer1" style="display: none;">
-          <label for="name">Gemeinnütziger Verein e. V., Mustermannstraße 1, in 00000 Mustermannstadt</label><br>
-           <br>
-        </div>
-           
-        <script>
-        function toggleForm2() {
-        var formContainer = document.getElementById("formContainer1");
-        var openFormCheckbox = document.getElementsByName("AbgabevorOrt")[0];
-
-            if (openFormCheckbox.checked) {
-            formContainer.style.display = "block";
-            } else {
-             formContainer.style.display = "none";
-            }
-         }
-        </script>
-        <br>
-        <label for="name">Kleiderart:</label><br>
-        <input type="text" Kleiderart="name" id="Kleiderart" required placeholder="Hemd, T-Shirt, Hose, Socken"><br>
-        <label for="name">Krisengebiet:</label><br>
-        <input type="text" Krisengebiet="name" id="Krisengebiet"><br>
-
-        <button type="submit"> Registrieren </button>
-      </form>
+      </div>
 
       <script>
-        // JavaScript-Code hier einfügen
-        function validateForm() {
-          // Überprüfung der Abholadresse
-          var abholadresseInput = document.getElementById("abholadresse");
-          var abholadresse = abholadresseInput.value;
-        
-          if (abholadresse === "") {
-            alert("Bitte geben Sie die Abholadresse ein.");
-            return false; // Blockiert das Absenden des Formulars
+        function toggleForm() {
+          var formContainer = document.getElementById("formContainer");
+          var openFormCheckbox = document.getElementsByName("Abholung")[0];
+
+          if (openFormCheckbox.checked) {
+            formContainer.style.display = "block";
+          } else {
+            formContainer.style.display = "none";
           }
-        
-          // Weitere Validierungen für andere Formularfelder hier einfügen
-        
-          return true; // Erlaubt das Absenden des Formulars
         }
       </script>
 
-    </body>
+      <label>
+        <input type="checkbox" name="AbgabevorOrt" onclick="toggleForm2()" value="AbgabevorOrt"> Abgabe vor Ort <br>
+      </label>
+
+      <div id="formContainer1" style="display: none;">
+        <label for="name">Gemeinnütziger Verein e. V., Mustermannstraße 1, in 00000 Mustermannstadt</label><br>
+        <br>
+      </div>
+
+      <script>
+        function toggleForm2() {
+          var formContainer = document.getElementById("formContainer1");
+          var openFormCheckbox = document.getElementsByName("AbgabevorOrt")[0];
+
+          if (openFormCheckbox.checked) {
+            formContainer.style.display = "block";
+          } else {
+            formContainer.style.display = "none";
+          }
+        }
+      </script>
+      <br>
+      <label for="name">Kleiderart:</label><br>
+      <input type="text" Kleiderart="name" id="Kleiderart" required placeholder="Hemd, T-Shirt, Hose, Socken"><br>
+      <label for="name">Krisengebiet:</label><br>
+      <input type="text" Krisengebiet="name" id="Krisengebiet"><br>
+
+      <button type="submit"> Registrieren </button>
+    </form>
+
+    <script>
+      // JavaScript-Code hier einfügen
+      function validateForm() {
+        // Überprüfung der Abholadresse
+        var abholadresseInput = document.getElementById("abholadresse");
+        var abholadresse = abholadresseInput.value;
+
+        if (abholadresse === "") {
+          alert("Bitte geben Sie die Abholadresse ein.");
+          return false; // Blockiert das Absenden des Formulars
+        }
+
+        // Weitere Validierungen für andere Formularfelder hier einfügen
+
+        return true; // Erlaubt das Absenden des Formulars
+      }
+    </script>
+
+  </body>
 
 
   <table>
@@ -166,12 +172,13 @@ href="https://www.facebook.com/Kleiderspenden">Facebook</a></li>
     </tbody>
   </table>
 
-<footer>
-  <nav>
-    <ul>
-      <li><a href="privacy.html">Datenschutz</a></li>
-      <li><a href="imprint.html">Impressum</a></li>
-    </ul>
-  </nav>
-</footer>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="imprint.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </html>
