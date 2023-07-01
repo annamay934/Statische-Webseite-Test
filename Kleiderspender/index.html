@@ -86,19 +86,6 @@
         <input type="text" Wohnort="name" id="Wohnort" required> <br><br>
       </div>
 
-      <script>
-        function toggleForm() {
-          var formContainer = document.getElementById("formContainer");
-          var openFormCheckbox = document.getElementsByName("Abholung")[0];
-
-          if (openFormCheckbox.checked) {
-            formContainer.style.display = "block";
-          } else {
-            formContainer.style.display = "none";
-          }
-        }
-      </script>
-
       <label>
         <input type="checkbox" name="AbgabevorOrt" onclick="toggleForm2()" value="AbgabevorOrt"> Abgabe vor Ort <br>
       </label>
@@ -108,18 +95,6 @@
         <br>
       </div>
 
-      <script>
-        function toggleForm2() {
-          var formContainer = document.getElementById("formContainer1");
-          var openFormCheckbox = document.getElementsByName("AbgabevorOrt")[0];
-
-          if (openFormCheckbox.checked) {
-            formContainer.style.display = "block";
-          } else {
-            formContainer.style.display = "none";
-          }
-        }
-      </script>
       <br>
       <label for="name">Kleiderart:</label><br>
       <input type="text" Kleiderart="name" id="Kleiderart" required placeholder="Hemd, T-Shirt, Hose, Socken"><br>
@@ -129,47 +104,10 @@
       <button type="submit"> Registrieren </button>
     </form>
 
-    <script>
-      // JavaScript-Code hier einfügen
-      function validateForm() {
-        // Überprüfung der Abholadresse
-        var abholadresseInput = document.getElementById("abholadresse");
-        var abholadresse = abholadresseInput.value;
-
-        if (abholadresse === "") {
-          alert("Bitte geben Sie die Abholadresse ein.");
-          return false; // Blockiert das Absenden des Formulars
-        }
-
-        // Weitere Validierungen für andere Formularfelder hier einfügen
-
-        return true; // Erlaubt das Absenden des Formulars
-      }
-    </script>
-
   </body>
-
 
   <table>
     <thead>
-      <tr>
-        <th>Leistung</th>
-        <th>Einzelpreis</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Stundensatz Beratung</td>
-        <td>&euro; 100,--</td>
-      </tr>
-      <tr>
-        <td>Tagessatz Beratung</td>
-        <td>&euro; 600,--</td>
-      </tr>
-      <tr>
-        <td>Homepage Baukasten pro Monat</td>
-        <td>&euro; 1.000,--</td>
-      </tr>
     </tbody>
   </table>
 
