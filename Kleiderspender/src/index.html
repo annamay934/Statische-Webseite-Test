@@ -6,47 +6,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kleiderspenden Test</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+  
+  <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script>
+  <script src="../src/script.js"></script>
 </head>
 
 <header>
-
-  <nav>
-    <ul>
-      <li>
-        <form>
-          <input type="text" name="suche" placeholder="Suche">
-        </form>
-      </li>
-
-      <li>
-        <a href="https://www.instagram.com/Kleiderspenden">Instagram</a>
-      </li>
-      <li>
-        <a href="https://www.facebook.com/Kleiderspenden">Facebook</a>
-      </li>
-      <li>
-        <a href="contact.html">Kontakt</a>
-      </li>
-    </ul>
-  </nav>
-
-  <nav>
-    <ul>
-      <li><a href="home.html">Homepage</a></li>
-      <li><a href="services.html">Unsere Leistungen</a></li>
-      <li><a href="products.html">Unsere Produkte</a></li>
-      <li><a href="prices.html">Unsere Preise</a></li>
-      <li><a href="about.html">Über uns</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="text-warning">Klamotten</span>Annahme</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/Kleiderspenden">Instagram</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/Kleiderspenden">Facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Unsere Leistungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+         
+        </ul>
+        
+      </div>
+    </div>
   </nav>
 
   <body>
     <section>
       <li>
+        <div  class="container">
         <img src="https://cdn.pixabay.com/photo/2015/06/20/18/24/dresses-816033_640.jpg" />
       </li>
+    </div>
 
       <h1>Willkommen auf der Homepage von ihrer Kleiderspenden Annahme</h1>
       <p>
