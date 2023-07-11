@@ -18,7 +18,7 @@
 }
 
 .custom-h3 {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 20px;
   text-align: center;
 }
@@ -144,6 +144,11 @@ th {
     letter-spacing: 2px;
   }
 
+  .navbar-toggler .navbar-toggler-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
   .my-footer footer {
     background: #3b3b3b;
     width: 100%;
@@ -162,6 +167,18 @@ th {
   background-image {
     width: 1rem;
     height: 1rem;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 2em;
+  }
+
+  .custom-h1 {
+    margin-top: 50px;
+    font-size: 26px;
+    text-align: center;
   }
 }
 
