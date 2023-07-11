@@ -1,124 +1,323 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kleiderspenden Test</title>
+    <link rel="shortcut icon" href="#" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kleiderspenden Test</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  
-  <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.esm.min.js"></script>
-  <script src="../src/script.js"></script>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><span class="text-warning">Klamotten</span>Annahme</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/Kleiderspenden">Instagram</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.facebook.com/Kleiderspenden">Facebook</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Unsere Leistungen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Über uns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontakt</a>
-          </li>
-         
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
+    <script src="../src/script.js"></script>
+    <script
+      type="module"
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    ></script>
+  </head>
 
   <body>
-    <section>
-      <li>
-        <div  class="container">
-        <img src="https://cdn.pixabay.com/photo/2015/06/20/18/24/dresses-816033_640.jpg" />
-      </li>
-    </div>
+    <div class="background-image"></div>
+    <header style="padding-top: 10px">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../src/index.html">
+            <span class="text-warning">Kleiderspendenannahme</span>annahme</a
+          >
+          <img
+            class="img"
+            width="50"
+            src="../src/jpg/dresses-g18e096c06_1280.jpg"
+            alt="Kleider Bild"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-      <h1>Willkommen auf der Homepage von ihrer Kleiderspenden Annahme</h1>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../src/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.instagram.com/Kleiderspenden"
+                  >Instagram</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://www.facebook.com/Kleiderspenden"
+                  >Facebook</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/services.html"
+                  >Unsere Leistungen</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/aboutus.html">Über uns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../src/contact.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <h1 class="custom-h1">
+        Willkommen auf der Homepage von ihrer Kleiderspendenannahme
+      </h1>
+      <br />
       <p>
-        Gerne unterstützen wir Sie dabei ihren Beitrag zum Klimawandel zu leisten.
-        <br>
-        Sie können ihre Kleiderspenden hier online registrieren oder vor Ort abgeben.
+        Gerne unterstützen wir Sie dabei, Ihren Beitrag zum Klimawandel zu
+        leisten. Die Klamotten können entweder an der Geschäftsstelle des
+        Vereins persönlich übergeben werden oder von einem Sammelfahrzeug
+        abgeholt werden.
       </p>
-      <h2>Bitte machen Sie hier ihre Angaben:</h2>
     </section>
 
-    <form onsubmit="validateForm()">
-      <label>
-        <input type="checkbox" name="Abholung" onclick="toggleForm()" value="Abholung"> Abholung durch uns <br>
-      </label>
+    <section>
+      <h2 class="custom-h2">
+        Bitte wählen Sie aus den zwei Varianten hier aus:
+      </h2>
+      <p>
+        Sie werden nach der Regstrierung auf eine Bestätigungsseite
+        weitergeleitezt, bei dem Sie ihre Eingaben einsehen können.
+      </p>
+    </section>
 
-      <div id="formContainer" style="display: none;">
-        <label for="name">Vorname:</label><br>
-        <input type="text" Vorname="name" id="Vorname" required> <br>
-
-        <label for="name">Nachname:</label><br>
-        <input type="text" Nachname="name" id="Nachname" required> <br>
-
-        <label for="name">Straße mit Hausnummer:</label><br>
-        <input type="text" Straße mit Hausnummer="name" id="Straße mit Hausnummer" required
-          placeholder="Mustermannstraße 3"> <br>
-
-        <label for="name">Postleitzahl:</label><br>
-        <input type="text" Postleitzahl="name" id="Postleitzahl" required> <br>
-
-        <label for="name">Wohnort:</label><br>
-        <input type="text" Wohnort="name" id="Wohnort" required> <br><br>
+    <form
+      method="get"
+      action="../src/output.html"
+      onsubmit="return validateForm1()"
+    >
+      <div id="page" class="container" style="text-align: center">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 mx-auto text-center">
+            <div class="form-group">
+              <strong>
+                <input
+                  type="checkbox"
+                  name="AbgabevorOrt"
+                  id="AbgabeOrt"
+                  onclick="toggleForm2()"
+                  value="AbgabevorOrt"
+                />
+                Übergabe an der Geschäftsstelle
+              </strong>
+              <div id="formContainer1" style="display: none">
+                <label for="AbgabeOrt"
+                  >Gemeinnütziger Verein e. V., Mustermannstraße 1, in 12345
+                  Mustermannstadt</label
+                >
+                <div class="form-group">
+                  <br />
+                  <label for="clothes1">Kleiderart:</label><br />
+                  <input
+                    type="text"
+                    class="form-control text-center"
+                    id="clothes1"
+                    name="Kleiderart1"
+                    placeholder="Hemd, T-Shirt, Hose, Socken"
+                  /><br />
+                </div>
+                <div class="form-group">
+                  <label for="location1">Krisengebiet:</label><br />
+                  <select
+                    type="text"
+                    class="form-control text-center"
+                    id="location1"
+                    name="Krisengebiet1"
+                  >
+                    <br />
+                  </select>
+                  <br />
+                  <button type="submit" class="btn btn-primary">
+                    Registrieren
+                  </button>
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <label>
-        <input type="checkbox" name="AbgabevorOrt" onclick="toggleForm2()" value="AbgabevorOrt"> Abgabe vor Ort <br>
-      </label>
-
-      <div id="formContainer1" style="display: none;">
-        <label for="name">Gemeinnütziger Verein e. V., Mustermannstraße 1, in 00000 Mustermannstadt</label><br>
-        <br>
-      </div>
-
-      <br>
-      <label for="name">Kleiderart:</label><br>
-      <input type="text" Kleiderart="name" id="Kleiderart" required placeholder="Hemd, T-Shirt, Hose, Socken"><br>
-      <label for="name">Krisengebiet:</label><br>
-      <input type="text" Krisengebiet="name" id="Krisengebiet"><br>
-
-      <button type="submit"> Registrieren </button>
     </form>
 
-  </body>
+    <form
+      method="get"
+      action="../src/output.html"
+      onsubmit="return validateForm2()"
+    >
+      <div id="page" class="container" style="text-align: center">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 mx-auto text-center">
+            <div class="form-group">
+              <br />
+              <strong>
+                <input
+                  type="checkbox"
+                  name="Abholung"
+                  onclick="toggleForm()"
+                  value="Abholung"
+                />
+                Abholung <br />
+              </strong>
+            </div>
 
-  <table>
-    <thead>
-    </tbody>
-  </table>
+            <div id="formContainer" style="display: none">
+              <div class="form-group">
+                <br />
+                <label for="firstName">Vorname:</label>
+                <input
+                  id="firstName"
+                  class="form-control text-center"
+                  type="text"
+                  name="Vorname"
+                  placeholder="Maximilian"
+                />
+              </div>
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="privacy.html">Datenschutz</a></li>
-        <li><a href="imprint.html">Impressum</a></li>
-      </ul>
+              <div class="form-group">
+                <br />
+                <label for="lastName">Nachname:</label>
+                <input
+                  id="lastName"
+                  class="form-control text-center"
+                  type="text"
+                  name="Nachname"
+                  placeholder="Mustermann"
+                />
+              </div>
+
+              <div class="form-group">
+                <br />
+                <label for="street">Straße mit Hausnummer:</label>
+                <input
+                  id="street"
+                  class="form-control text-center"
+                  type="text"
+                  name="Straße"
+                  placeholder="Mustermannstraße 3"
+                />
+              </div>
+
+              <div class="form-group">
+                <br />
+                <label for="zip">Postleitzahl:</label>
+                <input
+                  id="zip"
+                  class="form-control text-center"
+                  type="text"
+                  name="Postleitzahl"
+                  placeholder="12345"
+                />
+              </div>
+
+              <div class="form-group">
+                <br />
+                <label for="city">Wohnort:</label>
+                <input
+                  id="city"
+                  class="form-control text-center"
+                  type="text"
+                  name="Wohnort"
+                  placeholder="Mustermannstadt"
+                />
+              </div>
+
+              <div class="form-group">
+                <br />
+                <label for="clothes2">Kleiderart:</label><br />
+                <input
+                  id="clothes2"
+                  class="form-control text-center"
+                  type="text"
+                  name="Kleiderart2"
+                  placeholder="Hemd, T-Shirt, Hose, Socken"
+                />
+              </div>
+
+              <div class="form-group">
+                <br />
+                <label for="location2">Krisengebiet:</label>
+                <select
+                  id="location2"
+                  class="form-control text-center"
+                  type="text"
+                  name="Krisengebiet2"
+                ></select>
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  Registrieren
+                </button>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <section>
+      <h2 class="custom-h2">Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="custom-h2">Lorem ipsum dolor sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </p>
+    </section>
+
+    <nav class="navbar my-footer">
+      <div class="container-fluid">
+        <footer>
+          <a class="navbar-brand1" href="privacy.html">Datenschutz</a> <br />
+          <a class="navbar-brand1" href="imprint.html">Impressum</a> <br />
+        </footer>
+      </div>
     </nav>
-  </footer>
-
+  </body>
 </html>
