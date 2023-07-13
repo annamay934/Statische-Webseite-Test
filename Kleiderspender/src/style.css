@@ -87,17 +87,19 @@ main {
 }
 
 table {
+  height: 8rem;
   width: auto;
-  height: 5rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 th,
 td {
-  padding: 0.5em;
   border-bottom: 1px solid;
   text-align: center;
+  font-size: 16px;
+  padding: 0 10em;
+  height: 2.15rem;
 }
 
 th {
